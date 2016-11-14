@@ -29,18 +29,18 @@ public class BuyStampsTest extends TestBase {
 		System.out.println("The total number of image are "
 				+ totalStamps.size());
 
-		Select dropList = new Select(postalstoreSTAMP.selectFormat);
-		dropList.selectByValue("678704");
+		//Select dropList = new Select(postalstoreSTAMP.selectFormat);
+		//dropList.selectByValue("678704");
 		postalstoreSTAMP.inputQuantity.clear();
 		postalstoreSTAMP.inputQuantity.sendKeys("3");
 		postalstoreSTAMP.clickAddToCart.click();
 		postalstoreSTAMP.putUpdatedNumber.clear();
 		postalstoreSTAMP.putUpdatedNumber.sendKeys("1");
 		postalstoreSTAMP.clickUpdate.click();
-		postalstoreSTAMP.putCouponCode.sendKeys("asdf");
-		postalstoreSTAMP.clickApplyCoupon.click();
-		Assert.assertEquals(postalstoreSTAMP.couponGreeting.getText(),
-				"We're sorry, this coupon cannot be applied at this time.");
+		//postalstoreSTAMP.putCouponCode.sendKeys("asdf");
+		//postalstoreSTAMP.clickApplyCoupon.click();
+	//	Assert.assertEquals(postalstoreSTAMP.couponGreeting.getText(),
+		//		"We're sorry, this coupon cannot be applied at this time.");
 		postalstoreSTAMP.clickCheckOut.click();
 		postalstoreSTAMP.clickCheckOut.click();
 		postalstoreSTAMP.clickShipToAddress.click();

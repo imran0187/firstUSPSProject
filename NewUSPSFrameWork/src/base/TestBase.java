@@ -5,7 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 
+import pages.BusinessPrice;
+import pages.CreateLabelAddBookPage;
 import pages.FindUSPSlocation;
+import pages.InternationalPage;
 import pages.LookUpZip;
 import pages.MailandSlipPage;
 import pages.PostalStoreStamp;
@@ -21,6 +24,9 @@ public class TestBase extends WebDriver {
 	public static LookUpZip lookupZIP;
 	public static FindUSPSlocation finduspsLOCATION;
 	public static PostalStoreStamp postalstoreSTAMP;
+	public static BusinessPrice businessPRICE;
+	public static InternationalPage internationalPAGE;
+	public static CreateLabelAddBookPage createlabeladdbookPAGE;
 	
 	@BeforeClass
 	public void testSetup () {
@@ -36,6 +42,9 @@ public class TestBase extends WebDriver {
 		lookupZIP = PageFactory.initElements(driver, LookUpZip.class);
 		finduspsLOCATION = PageFactory.initElements(driver, FindUSPSlocation.class);
 		postalstoreSTAMP = PageFactory.initElements(driver, PostalStoreStamp.class);
+		businessPRICE = PageFactory.initElements(driver, BusinessPrice.class);
+		internationalPAGE = PageFactory.initElements(driver, InternationalPage.class);
+		createlabeladdbookPAGE = PageFactory.initElements(driver, CreateLabelAddBookPage.class);
 	}
 
 }

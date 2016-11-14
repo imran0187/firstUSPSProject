@@ -10,8 +10,20 @@ public class TrakingPage extends PageBase{
 	public WebElement tRakingField;
 	
 	@FindBy (xpath =".//*[@id='quick-tools--form-trackconfirm']/div/input[2]")
-	public WebElement tRakingButton;
+	public WebElement tRakingArrow;
 	
 	@FindBy (xpath = ".//*[@id='results-multi']/div[1]/div/div[3]/div[1]/h3")
 	public WebElement tRAKINGGreeting;
+	
+	@FindBy (id="tLabels")
+	public WebElement anothertRakingField;
+	
+	@FindBy (id="trackNumFindBtn" )
+	public WebElement tRackItButton;
+	
+	@FindBy (xpath = ".//*[@id='results-multi']/div[1]/div/div[1]/div[2]/div[2]/ul/li/span")
+	public WebElement iNVALIDtRAKINGGreeting;
+	
+	
+	
 }

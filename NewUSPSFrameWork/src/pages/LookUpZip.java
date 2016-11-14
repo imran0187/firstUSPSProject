@@ -27,7 +27,7 @@ public class LookUpZip extends PageBase{
 	@FindBy (id="lookupZipFindBtn")
 	public WebElement clickFindButton;
 	
-	@FindBy (xpath = ".//*[@id='result-list']/ul/li/div/p[1]/span[4]")
+	@FindBy (xpath = ".//*[@id='result-cities']/p[2]")
 	public WebElement actualGreeting;
 	
 	@FindBy(id="link-CitiesByZip" ) 
@@ -39,6 +39,12 @@ public class LookUpZip extends PageBase{
 	@FindBy(id="lookupZipByCitiesBtn") 
 	public WebElement clickZipFindButton;
 	
-	@FindBy(xpath = ".//*[@id='result-cities']/p[2]") 
-	public WebElement actualZipGreeting;
+	@FindBy(xpath = ".//*[@id='result-list']/ul/li/div/p[1]/span[4]") 
+	public WebElement validZipGreeting;
+	
+	@FindBy(id="link-byCompany") 
+	public WebElement zipCodeByAddLink;
+	
+	@FindBy(xpath = ".//*[@id='results-wrapper']/div[2]/ul/li[1]") 
+	public WebElement invalidZipGreeting;
 }

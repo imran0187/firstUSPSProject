@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.BuyStampsTest">
+      <class name="test.TestTwoLogIn">
         <methods>
           <include name="testSetup"/>
-          <include name="stampFromPostalStore"/>
+          <include name="signInTest"/>
         </methods>
-      </class> <!-- test.BuyStampsTest -->
+      </class> <!-- test.TestTwoLogIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

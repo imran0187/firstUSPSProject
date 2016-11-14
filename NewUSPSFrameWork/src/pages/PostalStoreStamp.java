@@ -15,7 +15,7 @@ public class PostalStoreStamp extends PageBase{
 	@FindBy (xpath = ".//*[@id='category-landing']/div[1]/div/a[5]/span")
 	public WebElement clickSeeAll;
 	
-	@FindBy (xpath = ".//*[@id='category-landing']/div[2]/article[7]/a/div[2]/img")
+	@FindBy (xpath = ".//*[@id='category-landing']/div[2]/article[4]/a/div[1]/img")
 	public WebElement clickToAddStamp;
 	
 	@FindBy (tagName = "img")

@@ -24,6 +24,21 @@ public class SignInPage extends PageBase{
 	@FindBy (xpath = ".//*[@id='single-col-msg']")
 	public WebElement signOutGreetings;
 	
+	@FindBy (id="error-list")
+	public WebElement errorGreetingList;
+	
+	@FindBy (id="error-invalid-password")
+	public WebElement passEmptyGreetings;
+	
+	@FindBy (id="error-min-username" )
+	public WebElement minUserCharGreeting;
+	
+	@FindBy ( id="error-min-password" )
+	public WebElement minPassCharGreeting;
+	
+	@FindBy (xpath=".//*[@id='actionerrors']/div/span")
+	public WebElement invalidPassGreetings;
+	
 	
 
 }
