@@ -30,7 +30,7 @@ public class TestBase extends WebDriver {
 	
 	@BeforeClass
 	public void testSetup () {
-		setWebDriver("crome");
+				setWebDriver("crome");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://www.usps.com/");

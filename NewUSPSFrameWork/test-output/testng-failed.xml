@@ -5,6 +5,9 @@
     <classes>
       <class name="test.TestTwoLogIn">
         <methods>
+          <include name="invalidSignMinCharField"/>
+          <include name="invalidSignWrongPass"/>
+          <include name="invalidSignInEmptyPassField"/>
           <include name="testSetup"/>
           <include name="signInTest"/>
         </methods>
